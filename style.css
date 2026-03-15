@@ -478,7 +478,8 @@ a {
 
 /* main */
 .main {
-  padding: 12px 22px 24px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .hero-title {

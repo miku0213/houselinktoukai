@@ -622,3 +622,79 @@ a {
   height: 100%;
   object-fit: cover;
 }
+/* ヘッダー分の余白 */
+.service-main{
+  padding-top:120px;
+  max-width:1100px;
+  margin:0 auto;
+}
+
+/* タイトル */
+.service-title{
+  text-align:center;
+  font-size:28px;
+  margin-bottom:40px;
+}
+
+/* グリッド */
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+/* カード */
+.service-card{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+/* タイトル */
+.service-card-title{
+  width:80%;
+  text-align:center;
+  padding:6px;
+  margin-bottom:10px;
+  border-radius:6px;
+}
+
+/* 画像 */
+.service-photo{
+  width:100%;
+  height:180px;
+  border-radius:8px;
+  margin-bottom:10px;
+  overflow:hidden;
+}
+
+.service-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* 説明文 */
+.service-text{
+  width:100%;
+  padding:12px;
+  border-radius:8px;
+  text-align:center;
+}
+
+/* スマホ */
+@media(max-width:768px){
+
+.service-grid{
+  grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:480px){
+
+.service-grid{
+  grid-template-columns:1fr;
+}
+
+}

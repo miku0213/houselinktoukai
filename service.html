@@ -9,24 +9,40 @@
 <body>
   <div class="page">
 
-    <header class="header">
-      <div class="header__inner">
-        <div class="header__logo"></div>
-
-        <div class="header__actions">
-          <a href="#" class="header__action"></a>
-          <a href="#" class="header__action"></a>
+       <header>
+      <div class="container">
+        <!-- 左：ロゴ -->
+        <div class="logo">
+          <img src="./images/icons/icon-favi.png" alt="ロゴ" />
+          <span>ハウスリンク東海</span>
+        </div>
+        <!-- 右：スマホ用の丸アイコン（PCではCSSで非表示） -->
+        <div class="header-icons">
+          <a href="tel:09070343645" aria-label="電話をかける">
+            <img src="./images/icons/icon-tel.png" alt="電話" />
+          </a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6gALRTJmPkdEEfdliW0t47S1zFdvjV9et6vgOWntGFKkSDw/viewform" target="_blank" aria-label="お問い合わせフォームへ">
+            <img src="./images/icons/icon-mail.png" alt="メール" />
+          </a>
+          <img src="./images/icons/icon-menu.png" alt="メニュー" class="menu-icon" onclick="toggleMenu()" />
+        </div>
+        <div class="header-right">
+          <!-- 画像だけで電話（番号入り画像） -->
+          <a href="tel:09070343645" class="tel-inline" aria-label="電話をかける（090-7034-3645）">
+            <img src="./images/icons/icon-telnom.png" alt="電話" class="tel-icon">
+          </a>
+          <!-- お問い合わせボタン -->
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6gALRTJmPkdEEfdliW0t47S1zFdvjV9et6vgOWntGFKkSDw/viewform" target="_blank" class="btn-contact">お問い合わせ</a>
         </div>
       </div>
-
-      <nav class="header__nav">
-        <a href="#" class="header__nav-item"></a>
-        <a href="#" class="header__nav-item"></a>
-        <a href="#" class="header__nav-item"></a>
-        <a href="#" class="header__nav-item"></a>
-      </nav>
     </header>
-
+    <!-- 固定ナビ -->
+    <nav class="header-nav" id="navMenu">
+      <a href="flow.html" class="nav-btn">サービスの流れ</a>
+      <a href="reason.html" class="nav-btn">選ばれる理由</a>
+      <a href="plan.html" class="nav-btn">料金プラン</a>
+      <a href="faq.html" class="nav-btn">よくある質問</a>
+    </nav>
     <main class="main">
 
       <section class="hero-title">

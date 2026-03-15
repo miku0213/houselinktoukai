@@ -1,1 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ハウスリンク東海</title>
+    <link rel="icon" href="./images/icons/icon-favi.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="format-detection" content="telephone=no">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <!-- 左：ロゴ -->
+        <div class="logo">
+          <img src="./images/icons/icon-favi.png" alt="ロゴ" />
+          <span>ハウスリンク東海</span>
+        </div>
+        <!-- 右：スマホ用の丸アイコン（PCではCSSで非表示） -->
+        <div class="header-icons">
+          <a href="tel:09070343645" aria-label="電話をかける">
+            <img src="./images/icons/icon-tel.png" alt="電話" />
+          </a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6gALRTJmPkdEEfdliW0t47S1zFdvjV9et6vgOWntGFKkSDw/viewform" target="_blank" aria-label="お問い合わせフォームへ">
+            <img src="./images/icons/icon-mail.png" alt="メール" />
+          </a>
+          <img src="./images/icons/icon-menu.png" alt="メニュー" class="menu-icon" onclick="toggleMenu()" />
+        </div>
+        <div class="header-right">
+          <!-- 画像だけで電話（番号入り画像） -->
+          <a href="tel:09070343645" class="tel-inline" aria-label="電話をかける（090-7034-3645）">
+            <img src="./images/icons/icon-telnom.png" alt="電話" class="tel-icon">
+          </a>
+          <!-- お問い合わせボタン -->
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6gALRTJmPkdEEfdliW0t47S1zFdvjV9et6vgOWntGFKkSDw/viewform" target="_blank" class="btn-contact">お問い合わせ</a>
+        </div>
+      </div>
+    </header>
+    <!-- 固定ナビ -->
+    <nav class="header-nav" id="navMenu">
+      <a href="flow.html" class="nav-btn">サービスの流れ</a>
+      <a href="reason.html" class="nav-btn">選ばれる理由</a>
+      <a href="plan.html" class="nav-btn">料金プラン</a>
+      <a href="faq.html" class="nav-btn">よくある質問</a>
+    </nav>
+    <!-- base 背景ゾーン -->
+    <div class="zone zone-base">
+      <div class="main-visual">
+        <img src="./images/top/main-visual.png" alt="メインビジュアル" />
+      </div>
+      <section class="section">
+        <h2>対応サービス</h2>
+        <div class="service-list">
+          <a href="nezumi.html" class="service-item">
+            <img src="./images/icons/icon-nezumi.png" alt="ネズミ駆除" class="service-icon" />
+            <span class="service-text">ネズミ駆除</span>
+          </a>
+          <a href="hakubisin.html" class="service-item">
+            <img src="./images/icons/icon-hakubisin.png" alt="ハクビシン対策" class="service-icon" />
+            <span class="service-text">ハクビシン対策</span>
+          </a>
+          <a href="koumori.html" class="service-item">
+            <img src="./images/icons/icon-koumori.png" alt="コウモリ侵入防止" class="service-icon" />
+            <span class="service-text">コウモリ侵入防止</span>
+          </a>
+          <a href="araiguma.html" class="service-item">
+            <img src="./images/icons/icon-araiguma.png" alt="アライグマ駆除" class="service-icon" />
+            <span class="service-text">アライグマ駆除</span>
+          </a>
+          <a href="araiguma.html" class="service-item">
+            <img src="./images/icons/icon-shoroari.png" alt="シロアリ駆除" class="service-icon" />
+            <span class="service-text">シロアリ駆除</span>
+          </a>
+          <a href="araiguma.html" class="service-item">
+            <img src="./images/icons/icon-hato.png" alt="ハト対策" class="service-icon" />
+            <span class="service-text">ハト対策</span>
+          </a>
+        </div>
+      </section>
+      <section class="section">
+        <h2>当社の強み</h2>
+        <div class="box-list">
+          <div class="box">✓ 見積もり無料</div>
+          <div class="box">✓ 地域密着・即日対応OK</div>
+          <div class="box">✓ 再発防止までしっかりサポート</div>
+        </div>
+      </section>
+</div>
+<section class="zone zone-orange">
+  <div class="cta-band">
+    <!-- PC用：画像の上に重ねるボタン -->
+    <a class="cta-mail"
+       href="https://docs.google.com/forms/d/e/1FAIpQLSc6gALRTJmPkdEEfdliW0t47S1zFdvjV9et6vgOWntGFKkSDw/viewform"
+       target="_blank" rel="noopener">お問い合わせフォームはコチラ</a>
+    <a class="cta-tel" href="tel:09070343645" aria-label="電話する（090-7034-3645）"></a>
+  </div>
+
+  <!-- SP用：画像の“下”に出す実ボタン（PCでは非表示） -->
+  <div class="cta-actions">
+    <a class="cta-btn btn-mail"
+       href="https://docs.google.com/forms/d/e/1FAIpQLSc6gALRTJmPkdEEfdliW0t47S1zFdvjV9et6vgOWntGFKkSDw/viewform"
+       target="_blank" rel="noopener">お問い合わせフォームはコチラ</a>
+    <a class="cta-btn btn-tel" href="tel:09070343645">090-7034-3645</a>
+  </div>
+</section>
+
+    <!-- wood 背景ゾーン（サービスの流れ） -->
+    <div class="zone zone-wood">
+      <section id="flow">
+        <h2 class="flow-title">
+          <img src="./images/steps/title.png" loading="lazy" alt="サービスの流れ" />
+        </h2>
+        <div class="flow-list">
+          <div class="step">
+            <div class="icon">
+              <img src="./images/steps/step1.png" loading="lazy" alt="STEP1 無料ご相談" />
+            </div>
+          </div>
+          <div class="step">
+            <div class="icon">
+              <img src="./images/steps/step2.png" loading="lazy" alt="STEP2 現地調査＆お見積りは無料" />
+            </div>
+          </div>
+          <div class="step">
+            <div class="icon">
+              <img src="./images/steps/step3.png" loading="lazy" alt="STEP3 ご納得のうえでご契約" />
+            </div>
+          </div>
+          <div class="step">
+            <div class="icon">
+              <img src="./images/steps/step4.png" loading="lazy" alt="STEP4 作業日はご都合に合わせて" />
+            </div>
+          </div>
+          <div class="step">
+            <div class="icon">
+              <img src="./images/steps/step5.png" loading="lazy" alt="STEP5 施工スタッフが安全・確実に作業" />
+            </div>
+          </div>
+          <div class="step">
+            <div class="icon">
+              <img src="./images/steps/step6.png" loading="lazy" alt="STEP6 駆除後も見守ります" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>&copy; 2026 ハウスリンク東海 All Rights Reserved.</footer>
+    <script>
+      function toggleMenu() {
+        const nav = document.getElementById('navMenu');
+        nav.classList.toggle('show');
+        // 外をクリックしたときに閉じる
+        document.addEventListener('click', function handleOutsideClick(e) {
+          const menu = document.getElementById('navMenu');
+          const menuIcon = document.querySelector('.menu-icon');
+          if (!menu.contains(e.target) && !menuIcon.contains(e.target)) {
+            menu.classList.remove('show');
+            document.removeEventListener('click', handleOutsideClick);
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
 
